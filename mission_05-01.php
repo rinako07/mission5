@@ -13,9 +13,9 @@
 <?php
   $date = date("Y年m月d日 H時i分s秒");
   
-    $dsn = 'mysql:dbname=tb250061db;host=localhost';
-    $user = 'tb-250061';
-    $pass = "BA2KMSCmuT";
+    $dsn = 'mysql:dbname= データベース名;host=localhost';
+    $user = 'ユーザ名';
+    $pass = "パスワード";
     $pdo = new PDO($dsn,$user,$pass,array(PDO::ATTR_ERRMODE=>PDO::ERRMODE_WARNING));
     
     $sql = "CREATE TABLE IF NOT EXISTS mission5"
